@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>3 AM Delivery — a narrated vertical short</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="masthead">
+        <p class="eyebrow">A narrated vertical short</p>
+        <h1>3 AM Delivery</h1>
+        <p class="lede">Tap play. Headphones recommended.</p>
+      </header>
+
+      <section class="short" id="short" aria-label="3 AM Delivery animated short">
+        <div class="short__grain"></div>
+        <div class="short__vignette"></div>
+
+        <nav class="progress" aria-label="Story progress">
+          <button class="progress__item" type="button" data-step="0" aria-label="Jump to scene 1"></button>
+          <button class="progress__item" type="button" data-step="1" aria-label="Jump to scene 2"></button>
+          <button class="progress__item" type="button" data-step="2" aria-label="Jump to scene 3"></button>
+          <button class="progress__item" type="button" data-step="3" aria-label="Jump to scene 4"></button>
+          <button class="progress__item" type="button" data-step="4" aria-label="Jump to scene 5"></button>
+          <button class="progress__item" type="button" data-step="5" aria-label="Jump to scene 6"></button>
+          <button class="progress__item" type="button" data-step="6" aria-label="Jump to scene 7"></button>
+          <button class="progress__item" type="button" data-step="7" aria-label="Jump to scene 8"></button>
+        </nav>
+
+        <div class="scene-mark" id="sceneMark">SCENE 01 / 08</div>
+
+        <div class="scenes">
+          <!-- 1. phone order -->
+          <div class="scene" id="scene-0" data-scene="0">
+            <div class="phone-stage">
+              <div class="phone">
+                <div class="phone__notch"></div>
+                <div class="phone__screen">
+                  <span class="phone__time">3:00 AM</span>
+                  <span class="phone__battery"></span>
+                  <div class="notice">
+                    <span class="notice__icon">🍕</span>
+                    <div>
+                      <strong>New delivery order</strong>
+                      <small>Address unavailable</small>
+                      <em>Tap to accept</em>
+                    </div>
+                  </div>
+                  <div class="phone__glow"></div>
+                </div>
+              </div>
+            </div>
+            <div class="rain"></div>
+          </div>
+
+          <!-- 2. pickup -->
+          <div class="scene" id="scene-1" data-scene="1">
+            <div class="room-glow room-glow--warm"></div>
+            <div class="counter"></div>
+            <div class="lamp"></div>
+            <div class="rider rider--counter">
+              <span class="rider__head"></span>
+              <span class="rider__body"></span>
+              <span class="rider__arm rider__arm--l"></span>
+              <span class="rider__arm rider__arm--r"></span>
+            </div>
+            <div class="pizza-box pizza-box--counter">
+              <span class="pizza-box__label">PIZZA</span>
+              <svg class="steam" viewBox="0 0 120 120" aria-hidden="true">
+                <path d="M30 110 C16 86 44 70 30 46 C22 32 38 22 34 10" />
+                <path d="M62 110 C48 86 76 70 62 46 C54 32 70 22 66 10" />
+                <path d="M94 110 C80 86 108 70 94 46 C86 32 102 22 98 10" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- 3. empty street -->
+          <div class="scene" id="scene-2" data-scene="2">
+            <div class="sky"></div>
+            <div class="buildings buildings--left"></div>
+            <div class="buildings buildings--right"></div>
+            <div class="road"></div>
+            <div class="road__lines"></div>
+            <div class="lamp lamp--street lamp--a"></div>
+            <div class="lamp lamp--street lamp--b"></div>
+            <div class="lamp lamp--street lamp--c"></div>
+            <div class="handlebar"></div>
+            <div class="rain rain--fast"></div>
+          </div>
+
+          <!-- 4. house -->
+          <div class="scene" id="scene-3" data-scene="3">
+            <div class="sky sky--deep"></div>
+            <div class="fog"></div>
+            <div class="house">
+              <div class="house__roof"></div>
+              <div class="house__wall"></div>
+              <div class="house__window house__window--flicker"></div>
+              <div class="house__window house__window--dark"></div>
+              <div class="house__door"></div>
+            </div>
+            <div class="weeds"></div>
+            <div class="lamp lamp--lone"></div>
+            <div class="rain"></div>
+          </div>
+
+          <!-- 5. door opens -->
+          <div class="scene" id="scene-4" data-scene="4">
+            <div class="door-space">
+              <div class="door-space__light"></div>
+              <div class="door-space__frame"></div>
+              <div class="door-space__door"></div>
+              <div class="door-space__knob"></div>
+            </div>
+            <div class="steps"></div>
+            <div class="dust"></div>
+            <div class="rain rain--mist"></div>
+          </div>
+
+          <!-- 6. table + photo -->
+          <div class="scene" id="scene-5" data-scene="5">
+            <div class="room-glow room-glow--bulb"></div>
+            <div class="bulb"></div>
+            <div class="wall-strips"></div>
+            <div class="table"></div>
+            <div class="photo">
+              <div class="photo__inner">
+                <span class="photo__head"></span>
+                <span class="photo__body"></span>
+              </div>
+              <small>1998</small>
+            </div>
+            <div class="pizza-box pizza-box--table"><span class="pizza-box__label">PIZZA</span></div>
+            <div class="dust"></div>
+          </div>
+
+          <!-- 7. doorway gone -->
+          <div class="scene" id="scene-6" data-scene="6">
+            <div class="room-glow room-glow--cold"></div>
+            <div class="wall-strips"></div>
+            <div class="blank-wall">
+              <span class="blank-wall__ghost"></span>
+            </div>
+            <div class="rider rider--back">
+              <span class="rider__head"></span>
+              <span class="rider__body"></span>
+              <span class="rider__arm rider__arm--l"></span>
+              <span class="rider__arm rider__arm--r"></span>
+            </div>
+            <div class="floor"></div>
+          </div>
+
+          <!-- 8. note + ending -->
+          <div class="scene" id="scene-7" data-scene="7">
+            <div class="box-interior">
+              <div class="pizza-slice"></div>
+              <div class="note">
+                <svg class="note__scribble" viewBox="0 0 200 150" aria-hidden="true">
+                  <path d="M18 28 q12 -10 22 2 t22 -2 t20 4" />
+                  <path d="M16 52 q16 -12 28 1 t24 -3 t26 3" />
+                  <path d="M20 78 q14 -10 26 2 t24 -2 t30 4" />
+                  <path d="M24 104 q18 -12 30 1 t26 -3 t22 3" />
+                </svg>
+              </div>
+            </div>
+            <div class="ending">
+              <p class="ending__note">You’ve finally come home.</p>
+              <div class="ending__flash"></div>
+              <p class="ending__part">PART 2?</p>
+              <p class="ending__comment">COMMENT BELOW</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="caption" id="caption" aria-live="polite">
+          <span class="caption__bar"></span>
+          <p id="captionText">At exactly three in the morning, a phone lit up.</p>
+        </div>
+
+        <div class="time-chip" id="timeChip">0:05.0</div>
+
+        <div class="play-overlay" id="playOverlay">
+          <button class="play-overlay__btn" id="startBtn" type="button">
+            <span class="play-overlay__icon">▶</span>
+            Play the story
+          </button>
+          <p>Narration + sound on</p>
+        </div>
+      </section>
+
+      <div class="controls">
+        <button class="btn btn--primary" id="playBtn" type="button" aria-label="Pause">Pause</button>
+        <button class="btn" id="restartBtn" type="button">Restart</button>
+        <button class="btn" id="voiceBtn" type="button" aria-pressed="true">Voice: on</button>
+      </div>
+      <p class="footnote">Tap a progress segment to jump to a scene.</p>
+    </main>
+
+    <audio id="score" src="score.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
